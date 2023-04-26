@@ -1,27 +1,27 @@
-USE crmproject;
+ USE crmproject2;
 
 CREATE TABLE owner (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    owner VARCHAR(40)
+    owner text(40)
 );
 
 CREATE TABLE country (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    country VARCHAR(40)
+    country text(40)
 );
 
 CREATE TABLE email_type(
     id INT AUTO_INCREMENT PRIMARY KEY,
-    email_type VARCHAR(1)
+    email_type text(1)
 );
 
 CREATE TABLE client(
     id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    last VARCHAR(40),
-    first VARCHAR(40),
-    email VARCHAR(40),
+    last text(40),
+    first text(40),
+    email text(40),
     sold BOOLEAN,
-    date VARCHAR(40),
+    date text(40),
     email_type_id INT,
     owner_id INT,
     country_id INT,
